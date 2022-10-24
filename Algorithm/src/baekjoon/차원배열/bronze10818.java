@@ -17,6 +17,7 @@ public class bronze10818 {
 		}
 		Arrays.sort(a);
 		System.out.print(a[0]+ " " +a[a.length - 1]);
+		
 	}
 
 }
