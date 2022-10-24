@@ -1,25 +1,24 @@
-package baekjoon.반복문;
+package baekjoon.차원배열;
 
 import java.util.Scanner;
 
-public class bronze2562 {
+public class bronze1546 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int[] arr = new int[9];
 		
-		int max=0;
-		for(int i =0; i < arr.length; i++) {
+		int N = sc.nextInt();
+		int[] arr = new int[N];
+		float max = 0;
+		float sum = 0;
+		for(int i = 0; i < N; i++) {
 			arr[i] = sc.nextInt();
 			max = Math.max(arr[i], max);
 		}
-		System.out.println(max);
 		for(int i = 0; i < arr.length; i++) {
-			if(max == arr[i]) {
-				System.out.println(i+1);
-			}
-			
+			sum += arr[i]/max *100;
 		}
+		System.out.println(sum/N);
 	}
 
 }
