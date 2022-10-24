@@ -8,9 +8,9 @@ public class bronze1546 {
 		Scanner sc = new Scanner(System.in);
 		
 		int N = sc.nextInt();
-		int[] arr = new int[N];
-		float max = 0;
-		float sum = 0;
+		double[] arr = new double[N];
+		double max = 0;
+		double sum = 0;
 		for(int i = 0; i < N; i++) {
 			arr[i] = sc.nextInt();
 			max = Math.max(arr[i], max);
